@@ -295,6 +295,7 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-left: 8px;
     padding-bottom: 32px;
 }
 
