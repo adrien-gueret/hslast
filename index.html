@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>HSLast</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.86, shrink-to-fit=no" />
+        <link href="./images/favicon.png" rel="icon shortcut" />
+        <link href="style.css?v1" rel="stylesheet" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://adrien-gueret.github.io/hslast/" />
+        <meta property="og:title" content="HSLast" />
+        <meta property="og:description" content="Découvrez les dernières cartes Hearthstone révélées !" />
+        <meta property="og:image" content="https://adrien-gueret.github.io/hslast/images/cover.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://adrien-gueret.github.io/hslast/" />
+        <meta property="twitter:title" content="HSLast" />
+        <meta property="twitter:description" content="Découvrez les dernières cartes Hearthstone révélées !" />
+        <meta property="twitter:image" content="https://adrien-gueret.github.io/hslasts/images/cover.png" />
+    </head>
+    <body>
+        <header id="header">
+            <h1 id="mainTitle">HSLast</h1>
+            <h2 id="subtitle">Découvrez les dernières cartes Hearthstone révélées !</h2>
+            <button id="notificationButton" class="fixedButton">Notifications</button>
+        </header>
+
+        <main>
+            <h3 id="lastExpansionName"></h2>
+            <p id="revealedCardCount"></p>
+
+            <nav id="cardList"></nav>
+        </main>
+
+        <aside id="errorModal" class="modalOverlay">
+            <div class="modal">
+                <img src="./images/alert.png" alt="" />
+                <h2 id="errorModalTitle">Erreur réseau !</h2>
+                <p id="errorModalContainer" class="modalInner">
+                    Une erreur est survenue lors de la récupération des données des cartes depuis les serveurs de Blizzard.<br />
+                    Désolé, mais vous allez devoir revenir plus tard...
+                </p>
+                <button class="button" id="errorModalButton">Fermer</button>
+            </div>
+        </aside>
+
+        <aside id="cardDetail" class="modalOverlay">
+            <div class="modal">
+                <h2 id="cardDetailTitle"></h2>
+                <h3 id="cardDetailClasses"></h3>
+                <div id="cardDetailInner" class="modalInner">
+                    <blockquote id="cardDetailQuote"></blockquote>
+                    <img class="card" id="cardDetailImage" alt="" />
+                    <span id="cardDetailChildren"></span>
+                </div>
+                
+                <a class="arrow-button arrow-left" id="cardDetailPrevButton">Carte précédente</a>
+                <a class="arrow-button arrow-right" id="cardDetailNextButton">Carte suivante</a>
+                <button class="button" id="cardDetailButton">Fermer</button>
+            </div>
+        </aside>
+
+        <aside id="notificationModal" class="modalOverlay">
+            <div class="modal">
+                <h2 id="notificationModalTitle">Recevez une notification quand une nouvelle carte est révélée</h2>
+                <div class="modalInner">
+                    <p id="notificationModalContent">
+                        Autorisez et activez les notifications, laissez cet onglet ouvert et recevez une alerte automatiquement
+                        quand une nouvelle carte est révélée !
+                    </p>
+                </div>
+               
+                <div>
+                    <button class="button secondary" id="notificationModalCloseButton">Fermer</button>
+                    <button class="button" id="notificationModalButton">Activer</button>
+                </div>
+            </div>
+        </aside>
+
+        <select id="localeSelector" class="fixedButton">
+            <option value="de_DE">Deutsch</option>
+            <option value="en_US">English</option>
+            <option value="es_ES">Español</option>
+            <option value="fr_FR">Français</option>
+            <option value="it_IT">Italiano</option>
+            <option value="ja_JP">日本語</option>
+            <option value="ko_KR">한국어</option>
+            <option value="pl_PL">Polski</option>
+            <option value="pt_BR">Português</option>
+            <option value="ru_RU">Русский</option>
+            <option value="th_TH">ภาษาไทย</option>
+            <option value="zh_TW">繁體中文</option>
+        </select>
+
+        <script src="locales.js?v1"></script>
+        <script src="client.js?v1"></script>
+        <script src="index.js?v1"></script>
+    </body>
+</html>
