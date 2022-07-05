@@ -48,7 +48,7 @@
         },
         en_US: {
             mainTitle: 'HSLast',
-            subtitle: 'Discover the last Hearthstone revealed cards!',
+            subtitle: 'Discover the last revealed cards from Hearthstone!',
             errorModalTitle: 'Network error!',
             errorModalContainer: 'An error occured while trying to get cards data from Blizzard servers.<br />Sorry, but you\'ll have to come here later...',
             errorModalButton: 'Close',
