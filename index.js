@@ -29,7 +29,7 @@
 
     function translateUI(client) {
         [
-            'mainTitle', 'subtitle',
+            'mainTitle', 'subtitle', 'siteBy', 'playOutside',
             'errorModalTitle', 'errorModalContainer', 'errorModalButton',
             'cardDetailButton', 'cardDetailPrevButton', 'cardDetailNextButton',
             'notificationModalTitle', 'notificationModalContent', 'notificationModalCloseButton',

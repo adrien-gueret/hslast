@@ -45,6 +45,8 @@
             notificationModalTitle: 'Recevez une notification quand une nouvelle carte est révélée',
             notificationModalContent: 'Autorisez et activez les notifications, laissez cet onglet ouvert et recevez une alerte automatiquement quand une nouvelle carte est révélée !',
             notificationModalCloseButton: 'Fermer',
+            playOutside: 'Jouez à deviner des cartes sur',
+            siteBy: 'Une page par',
         },
         en_US: {
             mainTitle: 'HSLast',
@@ -71,6 +73,8 @@
             notificationModalTitle: 'Receive a notification when a new card is revealed',
             notificationModalContent: 'Authorize and enable notifications, keep this tab opened and receive a notification as soon as a new card is revealed!',
             notificationModalCloseButton: 'Close',
+            playOutside: 'Play a "guess which card" game on',
+            siteBy: 'A page by',
         }
     };
 
