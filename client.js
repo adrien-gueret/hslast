@@ -201,7 +201,6 @@
 
   Client.prototype.getLastExpansionCards = function (getLastCount) {
     var that = this;
-
     return that.getLastExpansionData().then(function (expansionData) {
       var finalQueryParams = {
         set: expansionData.slug,
@@ -274,9 +273,7 @@
     return this.getMetadata().then(function (metadata) {
       return metadata.sets.find(function (setToCheck) {
         return (
-          setToCheck.type === "expansion" ||
-          setToCheck.type === "adventure" ||
-          setToCheck.id === 1809 // Hotfix because "Festival of Legends" does not have any type yet...
+          setToCheck.type === "expansion" || setToCheck.type === "adventure"
         );
       });
     });
