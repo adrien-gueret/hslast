@@ -273,7 +273,10 @@
     return this.getMetadata().then(function (metadata) {
       return metadata.sets.find(function (setToCheck) {
         return (
-          setToCheck.type === "expansion" || setToCheck.type === "adventure"
+          setToCheck.hyped === true ||
+          setToCheck.type === "expansion" ||
+          setToCheck.type === "adventure" ||
+          setToCheck.collectibleRevealedCount <= setToCheck.collectibleCount
         );
       });
     });
